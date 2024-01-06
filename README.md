@@ -1,1 +1,2 @@
 # calculator
+This calculator is a practical and user-friendly tool designed to perform various mathematical operations. It accepts numerical inputs and allows users to perform calculations like addition, subtraction, multiplication, and division. The calculator is designed with simplicity and efficiency in mind, providing quick and accurate results. It’s an excellent tool for anyone needing to perform mathematical calculations, from students to professionals. The user interface is intuitive, making it easy for users of all ages and skill levels to use.
