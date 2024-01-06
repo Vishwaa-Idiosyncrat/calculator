@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .calculator {
+        background-color: darkgrey;
+        padding: 0.6rem;
+        border-radius: 20px;
+      }
+      .calculator form input {
+        outline: 0;
+        height: 60px;
+        width: 60px;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+      }
+      form .display {
+        display: flex;
+        /* justify-content: flex-end; */
+        margin: 15px 0;
+      }
+      form .display input {
+        font-size: 40px;
+        flex: 1;
+        text-align: right;
+      }
+      form input.equal {
+        width: 145px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="displayscreen" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="displayscreen.value = ''"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="displayscreen.value = displayscreen.value.toString().slice(0,-1)"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="displayscreen.value += '.'"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="displayscreen.value += '/'"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="7"
+              onclick="displayscreen.value += '7'"
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="displayscreen.value += '8'"
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="displayscreen.value += '9'"
+            />
+            <input
+              type="button"
+              value="*"
+              onclick="displayscreen.value += '*'"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="displayscreen.value += '4'"
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="displayscreen.value += '5'"
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="displayscreen.value += '6'"
+            />
+            <input
+              type="button"
+              value="-"
+              onclick="displayscreen.value += '-'"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="1"
+              onclick="displayscreen.value += '1'"
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="displayscreen.value += '2'"
+            />
+            <input
+              type="button"
+              value="3"
+              onclick="displayscreen.value += '3'"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="displayscreen.value += '+'"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="displayscreen.value += '00'"
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="displayscreen.value += '0'"
+            />
+            <input
+              type="button"
+              value="="
+              onclick="displayscreen.value = eval(displayscreen.value)"
+              class="equal"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
